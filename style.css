@@ -176,7 +176,7 @@ footer {
 /* animation */
 @keyframes slide-in {
   from {
-    left:0;
+    left: 0;
   }
   to {
     left: 50%;
@@ -189,4 +189,4 @@ footer {
   to {
     left: 0;
   }
-  }
+}
