@@ -1,10 +1,10 @@
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --text-color: white;
   --bg-url: url(./bg-mobile-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
@@ -26,9 +26,9 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
- 
+  height: 100vh;
+
   /*backgroundd: color image repeat position/size */
-  
 }
 
 body * {
@@ -56,7 +56,7 @@ body * {
 #profile p {
   font-weight: 500;
   line-height: 24px;
-  margin-top: 8px ;
+  margin-top: 8px;
 }
 
 /* switch */
@@ -81,9 +81,9 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
-   right: 0;
-   left: initial;
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 #switch span {
   display: block;
@@ -94,38 +94,37 @@ body * {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
-
 }
 
 /* links */
 ul {
-  list-style:none;
+  list-style: none;
 
   display: flex;
   flex-direction: column;
-  gap: 16px; 
+  gap: 16px;
 
   padding: 24px 0;
 }
 
-ul li a {  
-   display: flex;
-   align-items: center;
-   justify-content: center;
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   padding: 16px 24px;
+  padding: 16px 24px;
 
-   background: var(surface-color);
-   border: 1px solid var(--stroke-color);
-   border-radius: 8px;
+  background: var(surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
 
-   backdrop-filter: blur(4px);
-   -webkit-backdrop-filter: blur(4px);
-  
-   text-decoration: none;
-   font-weight: 500;
-   transition: background 0.2s;
-} 
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
 
 /* pseudo-selector */
 ul li a:hover {
@@ -141,25 +140,33 @@ ul li a:hover {
   padding: 24px 0;
 
   font-size: 24px;
-
 }
 
 #social-links a {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   padding: 16px;
 
-  transition: background 0.2s; 
+  transition: background 0.2s;
   border-radius: 50%;
 }
 
 #social-links a:hover {
   background: var(--highlight-color);
- 
 }
 footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+/* media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(bg-desktop-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(bg-desktop-light.jpg);
+  }
 }
