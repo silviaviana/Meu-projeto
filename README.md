@@ -1,4 +1,5 @@
 # Meu-projeto
+
 <h1 align="center"> Meu projeto </h1>
 
 <p align="center">
@@ -34,7 +35,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 DevLinks é um agregador de links para usar como cartão de visitas online.
-
 
 ## :memo: Licença
 
